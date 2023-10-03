@@ -16,15 +16,15 @@ const cardArray = [
     },
     {
         name: 'meerkat',
-        img: 'meerkat.jpeg',
+        img: 'images/meerkat.jpeg',
     },
     {
         name: 'puppy',
-        img: 'puppy.jpeg',
+        img: 'images/puppy.jpeg',
     },
     {
         name: 'pony',
-        img: 'pony.jpeg',
+        img: 'images/pony.jpeg',
     },
     //Duplicate since we need a set of cards
     {
@@ -42,15 +42,15 @@ const cardArray = [
     },
     {
         name: 'meerkat',
-        img: 'meerkat.jpeg',
+        img: 'images/meerkat.jpeg',
     },
     {
         name: 'puppy',
-        img: 'puppy.jpeg',
+        img: 'images/puppy.jpeg',
     },
     {
         name: 'pony',
-        img: 'pony.jpeg',
+        img: 'images/pony.jpeg',
     },
     
 ]
@@ -87,4 +87,8 @@ function flipCard(){
     pickedCard.push(cardArray[cardId].name)
     console.log('clicked', cardId)
     console.log(pickedCard)
+
+    //Show image when clicked
+    this.setAttribute('src', cardArray[cardId].img)
+
 }
